@@ -1,0 +1,133 @@
+#main-id {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "selector selector selector"
+    "details details team"
+    "addButton addButton addButton"
+    "evolution evolution evolution"
+    "recents recents recents";
+    grid-gap: 5px;
+    max-width: 800px;
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width:768px) {
+    #main-id {
+
+        background-color: blue;
+        grid-template-areas: 
+            "header"
+            "selector"
+            "details"
+            "addButton"
+            "team"
+            "evolution"
+            "recents";
+    }
+    
+}
+
+#add-button-id{
+    grid-area: addButton;
+}
+
+#main-id > * {
+    border: 1px solid white;
+    padding: 5px 20px;
+}
+
+#header-id {
+    grid-area: header;
+}
+
+#selector-id {
+    grid-area: selector;
+}
+
+#details-id {
+    grid-area: details;
+    display: grid;
+    grid-template-areas: 
+    "subDetail subDetail subDetail"
+    "img img detailHeader"
+    "detailContent detailContent detailContent"
+    "addButton addButton addButton";
+}
+
+#details-id > * {
+    border: 1px solid white;
+}
+#details-id h2 {
+    grid-area: subDetail;
+}
+#details-id img {
+    grid-area: img;
+}
+#detail-header {
+    grid-area: detailHeader;
+}
+#detail-content {
+    grid-area: detailContent;
+}
+#details-id button {
+    grid-area: addButton;
+}
+
+#team-id {
+    grid-area: team;
+}
+
+#evolution-id {
+    grid-area: evolution;
+    display: grid;
+    grid-template-areas: 
+    "EvolutionH3 EvolutionH3 EvolutionH3"
+    "version-1 version-2 version-3";
+}
+
+#recents-id {
+    grid-area: recents;
+    display: grid;
+    grid-template-areas: 
+    "EvolutionH3 EvolutionH3 EvolutionH3"
+    "version-1 version-2 version-3";
+}
+#recents-list{
+    list-style-type: none;
+
+}
+#recents-id li {
+    display: inline-block;
+}
+#recents-id li {
+    cursor: pointer;
+}
+
+#details-id img {
+    width: 100px;
+}
+
+#team-list {
+    list-style: none;
+}
+
+#team-list img{
+    width: 50px;
+}
+
+#version-1 img {
+    width: 50px;
+}
+
+#recents-id img {
+    width: 50px;
+}
+#last-button-clear {
+    margin-left: 50px;
+    background-color: red;
+}
+

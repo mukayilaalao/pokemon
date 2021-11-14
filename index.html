@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Teams</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="main-id">
+        <div id="header-id"> 
+            <h1>Poke Teams</h1>
+        </div>
+        <div id="selector-id">
+            
+            <form id="form-id">
+                <div id="error-message"></div>
+                <select name="pokemon-select" id="pokemon-select">
+                    <option value="default">--Choose your Pokemon---</option>
+                    
+                </select>
+                <input type="submit" value="Go">
+            </form>
+        </div>
+        <div id="details-id">
+            
+            
+        </div>
+        <div id="add-button-id">
+            <button id="last-button-id">ADD</button>
+            <button id="last-button-clear">Clear</button>
+            
+        </div>
+        <div id="team-id">
+            <h3> Team</h3>
+            <ul id="team-list">
+        
+            </ul>
+            <div id="team-stats">
+                <h4>Team Statistics</h4>
+                <div>Hit Points: <span id="team-stats-hp">0</span></div>
+                <div>Attack: <span id="team-stats-atk">0</span></div>
+                <div>Defense: <span id="team-stats-def">0</span></div>
+            </div>
+        </div>
+        <div id="evolution-id">
+            <h3>Evolutions</h3>
+            <ul id="evolution-list">
+
+            </ul>
+            
+        </div>
+        <div id="recents-id">
+            <h3>Recent</h3>
+            <ul id="recents-list">
+
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
